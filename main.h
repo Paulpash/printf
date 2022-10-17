@@ -14,5 +14,7 @@ int print_string(va_list list);
 int print_percent(__attribute__((unused))va_list list);
 int print_interger(va_list list);
 int unsigned_integer(va_list list);
-
+void write_base(char *str);
+unsigned int base_len(unsigned int num, int base);
+char *_memcpy(char *dest, char *src, unsigned int n);
 #endif /* MAIN_H */
