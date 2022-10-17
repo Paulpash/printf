@@ -4,6 +4,19 @@
 #include <unistd.h>
 #include <stdio.h>
 
+/**
+* struct convert - defines a structure for symbols and functions
+*
+* @sym: The operator
+* @f: The function associated
+*/
+struct convert
+{
+	char *sym;
+	int (*f)(va_list);
+};
+typedef struct convert conver_t;
+
 int _printf(const char *format, ...);
 int _write_char(char c);
 int parser(const char *format, conver_t f_list[], va_list arg_list);
@@ -17,4 +30,5 @@ int unsigned_integer(va_list list);
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
+
 #endif /* MAIN_H */
