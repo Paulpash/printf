@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 int _printf(const char *format, ...);
-
+int _write_char(char c);
 
 
 #endif /* MAIN_H */
