@@ -3,6 +3,8 @@
 
 #include <unistd.h>
 #include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
 
 /**
 * struct convert - defines a structure for symbols and functions
@@ -25,7 +27,8 @@ char *rev_string(char *s);
 int print_char(va_list list);
 int print_string(va_list list);
 int print_percent(__attribute__((unused))va_list list);
-int print_interger(va_list list);
+int print_integer(va_list list);
+int print_unsgined_number(unsigned int n);
 int unsigned_integer(va_list list);
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
