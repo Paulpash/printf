@@ -9,12 +9,12 @@
 /**
 * struct convert - defines a structure for symbols and functions
 *
-* @sym: The operator
+* @op: The operator
 * @f: The function associated
 */
 struct convert
 {
-	char *sym;
+	char *op;
 	int (*f)(va_list);
 };
 typedef struct convert conver_t;
@@ -28,10 +28,13 @@ int print_char(va_list list);
 int print_string(va_list list);
 int print_percent(__attribute__((unused))va_list list);
 int print_integer(va_list list);
+int print_binary(va_list);
 int print_unsgined_number(unsigned int n);
 int unsigned_integer(va_list list);
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
+
+int hex_check(int, char);
 
 #endif /* MAIN_H */
