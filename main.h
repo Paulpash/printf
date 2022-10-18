@@ -34,7 +34,11 @@ int unsigned_integer(va_list list);
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_heX(va_list list);
 
 int hex_check(int, char);
-int print_octal(va_list list)
+
+
 #endif /* MAIN_H */
