@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 
 /**
  * main - Entry point
@@ -8,8 +7,6 @@
  */
 int main(void)
 {
-    int a;
-    a = _printf("%b\n", 0);
-    printf("%d\n", a);
+    _printf("%b\n", 98);
     return (0);
 }
