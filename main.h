@@ -36,5 +36,5 @@ unsigned int base_len(unsigned int num, int base);
 char *_memcpy(char *dest, char *src, unsigned int n);
 
 int hex_check(int, char);
-
+int print_octal(va_list list)
 #endif /* MAIN_H */
