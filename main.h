@@ -41,10 +41,6 @@ int print_reversed(va_list arg);
 int rot13(va_list list);
 
 int hex_check(int, char);
-
-/* Prototype for helper functions */
-char *rev_string(char *);
-void write_base(char *str);
-char *_memcpy(char *dest, char *src, unsigned int n);
+int _puts(char *str);
 
 #endif /* MAIN_H */
