@@ -40,5 +40,9 @@ int print_heX(va_list list);
 
 int hex_check(int, char);
 
+/* Prototype for helper functions */
+char *rev_string(char *);
+void write_base(char *str);
+char *_memcpy(char *dest, char *src, unsigned int n);
 
 #endif /* MAIN_H */
